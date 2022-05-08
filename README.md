@@ -1,2 +1,0 @@
-# GoBarnacle
-Introduction to GoLang
