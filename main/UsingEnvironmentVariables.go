@@ -1,3 +1,9 @@
+/*
+ * Created by Karthik Kolathumani
+ * Created on Sat May 07 2022
+ *
+ */
+
 package main
 
 import (
@@ -12,4 +18,5 @@ func main() {
 	for _, env := range os.Environ() {
 		fmt.Println(env)
 	}
+
 }
