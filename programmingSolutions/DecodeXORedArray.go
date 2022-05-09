@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func Decode(encoded []int, first int) []int {
+func decode(encoded []int, first int) []int {
 	decoded := make([]int, len(encoded)+1)
 	decoded[0] = first
 	for i := 1; i < len(decoded); i++ {
@@ -16,7 +16,7 @@ func Decode(encoded []int, first int) []int {
 func main() {
 	encoded := [4]int{6, 2, 7, 3}
 	first := 4
-	decoded := Decode(encoded[:], first)
+	decoded := decode(encoded[:], first)
 
 	for i := 0; i < len(decoded); i++ {
 		fmt.Println(decoded[i])
