@@ -40,3 +40,13 @@ func convertStringInt(author, authorId string) (authorCase string, authorIdConv 
 		return authorTitleCase, math.MinInt, err
 	}
 }
+
+// Use of variadic functions
+func calculateMax(inputArray ...int) (max int) {
+	var maxValue float64
+	for _, i := range inputArray {
+		maxValue = math.Max(maxValue, float64(i))
+	}
+
+	return int(maxValue)
+}
